@@ -1,0 +1,139 @@
+
+#count-reset-row {
+width: 100%;
+    }
+
+#ethnicity-chart {
+    font-family: 'Lato', futura, georgia;
+    }
+
+#entry-status-chart {
+    font-family: 'Lato', futura, georgia;
+}
+
+#grad-status-chart {
+    font-family: 'Lato', futura, georgia;
+}
+
+#gender-chart {
+    font-family: 'Lato', futura, georgia;
+}
+
+#year-chart {
+    width: 500px;
+    font-family: 'Lato', futura, georgia;
+}
+
+#series-chart {
+    width: 500px;
+    font-family: 'Lato', futura, georgia;
+}
+
+#data-count-top {
+    width: 100%;
+}
+
+    .navbar-text-q {
+        font: 400 24px "Helvetica Neue";
+        vertical-align: middle;
+    }
+
+    #census-container {
+        margin-top: 46px;
+        max-width: 1100px;
+    }
+
+    span.filter {
+        font-size: 14px;
+        color: #cc4c02;
+        font-weight: 500;
+        } 
+
+    span.filter-count {
+        color: #428BCA;
+        font-weight: bold;
+        width: 20px;
+        font-size: 18px;
+    }
+
+    span.total-count {
+        color: #525252;
+        font-weight: bold;
+        width: 20px;
+    }
+
+    span.reset {
+        font-size: 12px;
+        color: #cc4c02;
+    }
+
+    span.company-desc {
+        color: #525252;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    span.chart-footnotes {
+        font: 200 14px "Helvetica Neue";
+        stroke: #969696;
+    }
+
+    span.exit-desc {
+        background-color: yellow;
+    }
+
+    #reset-all {
+        color: #CC4C02;
+    }
+
+
+    tr.header {
+        
+        color: #696969;
+    }
+
+    tr {
+        font: 100 14px 'Lato';
+        color: #969696;
+    }
+.span3{
+    height: 900px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid black;
+    
+}
+.dc-chart g.row text{
+    fill: #525252;
+    font-size:12px;
+    cursor: pointer;
+    text-anchor: end; 
+    }
+video {
+    height: 100%;
+    width:100%;
+    object-fit: fill;
+    }
+
+a.donate {
+   background-color: #E57D26;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius:5px;
+   color: #ffffff;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   padding-bottom: 8px;
+   padding-top: 6px;
+   padding-left: 10px;
+   padding-right:10px;
+   box-shadow: 0 0 4px rgba(0, 0, 0, 0.0);
+   margin-left: 11px;
+   margin-right: 20px;
+   letter-spacing: 1.5px;
+}
+
+a.donate:hover{
+    text-decoration: none;
+}
