@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>titleofthepage</title>
+  <link rel="icon" type="image/x-icon" href="img/laptop-code-solid.svg" />  
+
+  <!-- Bootstrap core CSS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-grid.min.css" rel="stylesheet"> 
+    
+  <!-- Custom fonts for this template -->
+  <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+    <!-- Custom styles for this template -->
+  <link href="css/dc.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+    
+</head>
+<body id="page-top" style="padding-left: 25px;padding-bottom: 100px;padding-top: 25px;padding-right: 25px;">
+
+  <div class="container-fluid">
+    <a href="index.html">Return to Main Page</a>
+    <h3>Detailed Census of Yellowstone Packs in 2019 </h3>
+    <p>Population distribution of hiearchy, sex and coat color.</p>
+    <h6 style="font-weight: normal;"></h6>
+    <p><i class="fa fa-book"></i>&nbsp;Resources: <span style="text-decoration: underline;">Charting Yellowstone Wolves</span>, Dr. James HalfPenny PHD</p>  
+    <p><i class="fa fa-wrench"></i>&nbsp;Tools: D3.js, Dc.js</p>
+    <p><a href="https://github.com/Abalsinger/WolfProject"><i class="fab fa-github"></i>&nbsp;See&nbsp;Code</a></p>
+        <p><a href="WolfDcCharts.html">2018</a>&nbsp;|&nbsp;<a href="WolfDcCharts2020.html">2020</a>&nbsp;</p>  
+    <div class="container">
+        <div class="row">
+            <div id="data-count-top" class="row">
+                <span class="filter-count"></span>&nbsp; selected out of &nbsp;<span class="total-count"></span> &nbsp;recorded wolves |&nbsp;
+                <span id="reset-all">
+                    <a href="javascript:dc.filterAll();dc.redrawAll();">Reset ALL Filters</a>
+                </span>
+                 <p>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col">
+                <strong>Pack Roaming Territory</strong>
+                <div id="YS-chart">
+                    <svg width="480" height="480">
+                          <g>
+                       <path id="svg_3" d="m19.52,214.13067l-3.52,243.86931l177.76,0l26.4,-88.42045l15.84,-32.80114l-12.32,-17.11364l-40.48,-7.13068l-33.44,2.85227l-22.88,-11.40909l-5.28,-22.81818l-5.28,-15.6875l7.04,-22.81818l-12.32,-21.39204l-8.8,-9.98295l-29.92,-4.27841l-24.64,4.27841l-28.16,2.85227z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#e5e5e5" stroke="#000000"/>
+                       <path id="svg_5" d="m21.81132,63.57616c0,0 -1.98113,140.68874 -1.98113,140.68874c0,0 47.54717,-2.49007 47.54717,-2.49007c0,0 31.69811,0 31.69811,0c0,0 19.81132,1.24503 19.81132,1.24503c0,0 27.73585,4.98013 27.73585,4.98013c0,0 21.79245,-3.7351 21.79245,-3.7351c0,0 19.81132,-2.49007 19.81132,-2.49007c0,0 0,-13.69536 0,-13.69536c0,0 17.83019,-8.71523 17.83019,-8.71523c0,0 -15.84906,-24.90066 -15.84906,-24.90066c0,0 1.98113,-12.45033 1.98113,-12.45033c0,0 -1.98113,-13.69536 -1.98113,-13.69536c0,0 0,-22.4106 0,-22.4106c0,0 7.92453,-18.6755 7.92453,-18.6755c0,0 13.86792,-21.16556 13.86792,-21.16556c0,0 -13.86792,-18.6755 -13.86792,-18.6755c0,0 -21.79245,-8.71523 -21.79245,-8.71523c0,0 -29.71698,2.49007 -29.71698,2.49007c0,0 -3.96226,11.2053 -3.96226,11.2053c0,0 -27.73585,-1.24503 -29.71698,-1.24503c-1.98113,0 -13.86792,-9.96026 -13.86792,-11.2053c0,-1.24503 -17.83019,-7.4702 -17.83019,-7.4702c0,0 -17.83019,-3.7351 -17.83019,-3.7351c0,0 -25.75472,6.22517 -25.75472,6.22517c0,0 -23.77358,-14.9404 -23.77358,-14.9404c0,0 -11.88679,13.69536 -11.88679,13.69536c0,0 7.92453,17.43046 7.92453,17.43046c0,0 11.88679,12.45033 11.88679,12.45033l-0.00001,0.00001z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#e5e5e5" stroke="#000000"/>
+                       <path id="svg_6" d="m217.97531,47.19354l196.70371,-1.35484l15.34568,-10.83871l6.97531,31.16129l-25.11111,29.80645l-20.92593,23.03226l-43.24691,-14.90323l-27.90123,0l-29.2963,-8.12903c0,0 -16.74074,-5.41936 -18.1358,-5.41936c-1.39506,0 -37.66667,-8.12903 -37.66667,-8.12903c0,0 -13.95062,1.35484 -13.95062,1.35484c0,0 -9.76543,-2.70968 -9.76543,-2.70968c0,0 6.97531,-33.87097 6.97531,-33.87097l-0.00001,0.00001z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#e5e5e5" stroke="#000000"/>
+                       <path id="svg_9" d="m290.15286,108.41026l-14.78981,30.17949l-8.21656,24.69231l-13.1465,13.71795l6.57325,20.57692l16.43312,21.94872l19.71974,9.60256l13.1465,19.20513l21.36305,4.11538l14.78981,13.71795l14.78981,12.34615l21.36305,5.48718l0,-13.71795l11.50318,-12.34615l23.00637,-9.60256l6.57325,-13.71795l23.00637,-6.85897l24.64968,-5.48718l24.64968,-10.97436l16.43312,-21.94872l-11.50318,-12.34615l-18.07643,-16.46154l-19.71974,-19.20513l11.50318,-10.97436l-6.57325,-19.20513l4.92994,-16.46154c0,0 -6.57325,-17.83333 -8.21656,-17.83333c-1.64331,0 -18.07643,-6.85897 -18.07643,-6.85897c0,0 -34.50955,37.03846 -34.50955,37.03846c0,0 -16.43312,17.83333 -18.07643,17.83333c-1.64331,0 -24.64968,-6.85897 -24.64968,-6.85897c0,0 -26.29299,-5.48718 -26.29299,-5.48718c0,0 -27.9363,-1.37179 -27.9363,-1.37179c0,0 -24.64968,-2.74359 -24.64968,-2.74359l-0.00001,-0.00001z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#e5e5e5" stroke="#000000"/>
+                       <path id="svg_11" d="m310.78572,269.92856l-19.71429,4.15714l8.21429,18.01429l-13.14286,13.85714l-19.71429,8.31429l-19.71429,-8.31429l-13.14286,16.62857l9.85714,24.94286l-18.07143,30.48572l-9.85714,26.32857l-4.92857,31.87143l-6.57143,20.78572l253,0l0,-85.91429l-21.35714,-5.54286l-6.57143,-15.24286l-1.64286,-22.17143l18.07143,-9.7l6.57143,-26.32857l-19.71429,-2.77143l-21.35714,11.08571l-23,-6.92857l-24.64286,-8.31429l-18.07143,-8.31429l-14.78571,-13.85714l-19.71429,6.92857l0.00002,0.00001z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#e5e5e5" stroke="#000000"/>
+                       <path fill="#e5e5e5" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m248,184l7,19l16,18l19,12l11,8l8,10c0,0 -4,7 -4,7c0,0 -19,5 -19,5c0,0 4,19 4,19c0,0 -8,13 -8,13c0,0 -10,8 -10,8c0,0 -20,-10 -20,-10c0,0 -11,7 -11,7c0,0 -10,13 -10,13c0,0 -19,-5 -19,-5c0,0 -19,-3 -19,-3c0,0 -16,-1 -16,-1c0,0 -15,3 -15,3c0,0 -16,-1 -16,-1c0,0 -11,-11 -11,-11c0,0 -10,-19 -10,-19c0,0 0,-19 0,-19c0,0 4,-17 4,-17c0,0 -9,-19 -9,-19c0,0 7,-9 7,-9c0,0 28,2 28,2c0,0 27,-7 27,-7c0,0 13,-2 13,-2c0,0 2,-15 2,-15c0,0 13,-5 13,-5c0,0 38,-1 38,-1z" id="svg_8"/>
+                       <path fill="#e5e5e5" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m208,86l21,4l13,-1l29,8l9,9l-11,29l-9,22l-13,18l-22,2l-13,-2l-14,-21l-2,-31l2,-19l10,-18z" id="svg_10"/>
+                      </g>
+                      <path fill="none" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" id="svg_12" d="m369.5,301c-0.88666,-0.08533 -1.83865,-0.43045 -2.40451,-0.7045c-1.00296,-0.48572 -1.62738,-0.82043 -2.36615,-1.09549c-1.18304,-0.44046 -1.88062,-0.59787 -2.57867,-0.80002c-0.68329,-0.19788 -1.88889,-0.57932 -2.60901,-0.89999c-1.05551,-0.47003 -1.6416,-0.80008 -2.44165,-1.20001c-0.79999,-0.3999 -1.57446,-0.86185 -2.60001,-1.13333c-0.77518,-0.2052 -1.53381,-0.20886 -2.47916,-0.66666c-0.83942,-0.40649 -1.68234,-0.29971 -2.52084,-0.66666c-0.73535,-0.32181 -1.18405,-1.42163 -1.97916,-1.8125c-0.74396,-0.36572 -1.49799,-0.54291 -1.97269,-1.32083c-0.48895,-0.80127 -1.10876,-1.14081 -2.02664,-1.80002c-0.64117,-0.46048 -1.37683,-0.99762 -1.85486,-1.89999c-0.34338,-0.64822 -0.66663,-1.5585 -1.48798,-2.09982c-0.6492,-0.42786 -1.55386,-0.5838 -2.39203,-0.89883c-0.78555,-0.29526 -1.48224,-0.95862 -2.37067,-1.00134c-0.91492,-0.04398 -1.29282,0.4718 -1.97314,0.99551c-0.70538,0.543 -1.7045,0.00449 -2.59552,0.00449l-0.86331,0l-0.96317,0l-0.91019,0"/>
+                      <path fill="none" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m335.5,283c-14,-6 -29,-1 -29.5,-1c-0.5,0 1.5,17 1,17c-0.5,0 -12.5,11 -13,11c-0.5,0 -16.5,11 -17,11c-0.5,0 -19.5,0 -19.5,0c0,0 -8,5 -8.5,5c-0.5,0 0.5,14 0,14c-0.5,0 3.5,20 3,20c-0.5,0 -5.5,7 -6,7c-0.5,0 19.5,5 19,5c-0.5,0 12.5,-14 12,-14c-0.5,0 10.5,-15 10,-15c-0.5,0 6.5,-3 6,-3c-0.5,0 10.5,-3 10,-3" id="svg_16"/>
+                      <path fill="#aaffff" stroke="#000000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" d="m311.5,280l14.5,-3l17,8l17,11l2,11l0,17l-15,9l-12,0l9,16l8,13l-9,18l-14,4l-14,-4l2,-21l3,-19l-9,-8l-9,16l-2,17l1,18l5,12l-11,7l-9,-9l-9,-18l-1,-15l7,-14l-10,-8c0,0 -9.5,3 -10.5,3c-1,0 -6,28 -6.5,28c-0.5,0 -16.5,-2 -17,-2c-0.5,0 10.5,-20 10,-20c-0.5,0 -5.5,-23 -6,-23c-0.5,0 13.5,-6 13,-6c-0.5,0 20.5,3 20,3c-0.5,0 14.5,-4 14,-4c-0.5,0 12.5,-10 12,-10c-0.5,0 8.5,-15 8,-15c-0.5,0 1.5,-12 1.5,-12z" id="svg_19"/>
+                      <text fill="#7f7f7f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="600.59022" y="346.69565" id="svg_20" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.2885032594203949,0,0,0.41818180680274963,153.71664737490937,172.50909428298473) " stroke="#000000">Yellowstone Lake</text>
+                      <text fill="#7f7f7f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="436.26706" y="195.22222" id="svg_21" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.2522808210412745,0,0,0.4909090995788574,53.932587360762156,82.21818041801453) " stroke="#000000">Norris Geyser Basin</text>
+                      <text fill="#7f7f7f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="609.22422" y="285.85714" id="svg_22" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.33870312571525574,0,0,0.38181817531585693,-0.3099829098209739,192.56363838911057) " stroke="#000000">Old Faithful Geyser</text>
+                      <text fill="#7f7f7f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="345.46773" y="65.23301" id="svg_24" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.6131159663200378,0,0,0.5270040035247803,81.18519644252956,9.511653866618872) " stroke="#000000">Montana</text>
+                      <text fill="#7f7f7f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="248.64252" y="461.12903" id="svg_25" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="matrix(0.6192364692687988,0,0,0.5636363625526428,98.52851300686598,207.70909142494202) " stroke="#000000">Wyoming</text>
+                      <text fill="#7f7f7f" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="25.9337" y="348.10929" id="svg_26" font-size="24" font-family="serif" text-anchor="middle" xml:space="preserve" transform="rotate(88.53845977783203 11.51113414764407,362.2516174316406) matrix(0.6275559663772583,0,0,0.5096244812011719,-4.771939180791378,188.79457473754883) " stroke="#000000">Idaho</text>
+                      <text stroke="#000000" transform="rotate(89.6952896118164 466.99710083007807,404.7460021972656) matrix(0.5386132544674067,0,0,0.6115600645913409,177.19075507214393,22.94094731498785) " xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_2" y="632.07132" x="538.07537" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#7f7f7f">Wyoming</text>
+                     </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="col">
+                <strong>Population Distribution</strong>
+                <div id="population-chart"></div> 
+            </div>
+        </div>
+        <div class="row" style="padding-top: 30px;">
+            <div class="col">
+                <strong>Pack Hierarchy Distribution</strong>
+                <div id="level-chart"></div>
+                <div id="age-count">
+                Recorded Wolves: &nbsp;<span class="filter-count"></span>
+                </div> 
+            </div>
+            <div class="col">
+                <strong>Sex Distribution</strong>
+                <div id="sex-chart"></div>
+                 <div id="sex-count" class="row">
+                    Recorded Wolves: &nbsp;<span class="filter-count"></span>
+                </div> 
+            </div>
+            <div class="col">
+                <strong>Coat Color Distribution</strong>
+                <div id="coloring-chart"></div>
+                 <div id="color-count" class="row">
+                    Recorded Wolves: &nbsp;<span class="filter-count"></span>
+                </div>
+            </div>
+        </div>
+    </div>   
+    </body>
+
+
+  <!-- Bootstrap core and Plugin JavaScript -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+  <script type="text/javascript" src="js/d3.js"></script>
+  <script type="text/javascript" src="js/crossfilter.js"></script>
+  <script type="text/javascript" src="js/dc.js"></script>
+  <script type="text/javascript" src="js/wolf-graphs/dc-graph-script-2019.js"></script> 
+</html>
+
